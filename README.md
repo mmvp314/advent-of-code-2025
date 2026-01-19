@@ -1,0 +1,2 @@
+# Advent of Code 2025
+This is the code I wrote to answer the questions in the [Advent of Code 2025](https://adventofcode.com/2025). The data provided with the questions is not uploaded here but you can access it by registering on the Advent of Code website.
