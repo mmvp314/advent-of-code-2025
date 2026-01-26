@@ -1,13 +1,14 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('.\data\day3_data.csv', names=['bank'], header=None)
+with open('./data/day3_data.txt', 'r') as file:
+    df = [line[:-1] for line in file]
 
 # Part 1
 
 res = 0
 
-for i in df.bank:
+for i in df:
     s = list(str(i))
     max1 = max(s[:-1])
     index1 = s.index(max1)
@@ -22,7 +23,7 @@ print(f"Part 1 answer: {res}")
 
 res = 0
 
-for i in df.bank:
+for i in df:
     res1 = ''
     s = str(i)
     j = 12
